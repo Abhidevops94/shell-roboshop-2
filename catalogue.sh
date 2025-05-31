@@ -22,7 +22,4 @@ else
     echo -e "DATA is already loaded ... $Y SKIPPING $N"
 fi
 
-END_TIME=$(date +%s)
-TOTAL_TIME=$(( $END_TIME - $START_TIME ))
-
-echo -e "script is completed successfully, $Y time taken: $TOTAL_TIME $N" | tee -a $LOG_FILE
+print_time
